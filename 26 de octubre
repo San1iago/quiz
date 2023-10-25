@@ -1,0 +1,26 @@
+#Andrés Santiago Berrío Barragán
+
+# Acá pedimos como los puntos (X1 y Y1)
+x1_1, y1_1 = float(input("Ingrese x del primer punto de la primera recta: ")), float(input("Ingrese y del primer punto: "))
+x2_1, y2_1 = float(input("Ingrese x del segundo punto de la primera recta: ")), float(input("Ingrese y del segundo punto: "))
+
+# Luego aca seran los puntos finales de la recta, osea el (X2 y Y2)
+x1_2, y1_2 = float(input("Ingrese x del primer punto de la segunda recta: ")), float(input("Ingrese y del primer punto: "))
+x2_2, y2_2 = float(input("Ingrese x del segundo punto de la segunda recta: ")), float(input("Ingrese y del segundo punto: "))
+
+# Aca se calcula la pendiente
+m1 = (y2_1 - y1_1) / (x2_1 - x1_1)
+m2 = (y2_2 - y1_2) / (x2_2 - x1_2)
+
+# Acá le decimos tipo comprueba si son iguales o no (rectas paralelas)
+if m1 == m2:
+    print("Las rectas son paralelas.")
+else:
+    print("Las rectas no son paralelas.")
+
+# aca le decimos que nos diga si son iguales los puntos seleccionados para las rectas paralelas
+
+if (x1_1, y1_1) == (x1_2, y1_2) and (x2_1, y2_1) == (x2_2, y2_2):
+    print("Los puntos de las rectas son iguales.")
+else:
+    print("Los puntos de las rectas son diferentes.")
